@@ -1,0 +1,76 @@
+.all {
+  height: 638px;
+  padding: 20px 27px 0 27px;
+}
+
+.all .title {
+  height: 38px;
+  border-bottom: 1px solid #CFCFCF;
+}
+
+.all .title h4 {
+  float: left;
+  width: 90px;
+  background-color: #19B394;
+  line-height: 38px;
+  color: #fff;
+  text-align: center;
+}
+
+.all .title p {
+  position: relative;
+  float: right;
+  width: 215px;
+}
+
+.all .title p input {
+  width: 215px;
+  height: 28px;
+  border: 1px solid #E2E4E4;
+  border-radius: 14px;
+  outline: none;
+  padding-left: 40px;
+}
+
+.all .title p i {
+  position: absolute;
+  left: 15px;
+  top: 7px;
+  font-size: 16px;
+  color: #19B394;
+}
+
+.all .nav {
+  height: 105px;
+  padding-top: 15px;
+}
+
+.all .nav > ul {
+  height: 92px;
+  padding-left: 10px;
+  padding-top: 13px;
+  border: 1px solid #DEE1E3;
+  box-shadow: 0px 0px 1px 0px #DEE1E3;
+  background-color: #fff;
+}
+
+.all .nav > ul > li {
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 30px;
+  padding-right: 10px;
+  position: relative;
+}
+
+.all .nav > ul > li i {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: #19B394;
+}
+
+.all .data {
+  margin-top: 15px;
+  background-color: #fff;
+}

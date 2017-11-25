@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <script src="./libs/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+    <input type="text" id="username"/>
+    <input type="password" id="password"/>
+    <input type="button" value="Login" id="btnLogin"/>
+
+    <script>
+        $(function(){
+            $('#btnLogin').click(function(){
+                $.post('http://localhost:88/login', {username: $('#username').val(), pwd: $('#password').val()}, function(res){
+                    console.log(res);
+                    if(res.status){
+                        window.location.href = 'index.html';
+                        window.localStorage.setItem('token', res.data);
+                    } else {
+                        window.alert(res.message);
+                    }
+                })
+            })
+        })
+    </script>
+</body>
+</html>

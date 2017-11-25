@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Payment</title>
+   <!--  <link rel="stylesheet" href="../../../../../libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../../libs/jquery-confirm/jquery-confirm.css"> -->
+
+
+   <script src="libs/jquery-2.1.1.min.js"></script>
+    <!-- <script src="../../../../../libs/jquery-confirm/jquery-confirm.js"></script> -->
+    <script src="./libs/global.js"></script>   
+</head>
+<body>
+    <input type="text" id="barcode">
+
+    <script>
+        $(function(){
+            $('#barcode').focus().keyup(function(e){
+                if(e.keyCode == 13){
+                    //console.log($(this).val());
+                    $.post(global.apiBaseUrl + 'getproduct', {barcode: $(this).val()}, function(res){
+                        console.log(res);
+                    })
+                }
+            });
+        })
+    </script>
+</body>
+</html>

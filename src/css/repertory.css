@@ -1,0 +1,45 @@
+/* 
+* @Author: Marte
+* @Date:   2017-11-25 10:04:40
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-11-25 14:07:38
+*/
+li{list-style: none;}
+*{padding: 0;margin: 0;}
+
+header{
+    height: 67px;background-color:#19B394 ;
+}
+header .hr{
+    float: right;width: auto;
+}
+header .hr li{
+    padding:0 30px;float: left;line-height: 67px;color:#fff;
+}
+header .hr li span{
+    margin-right: 5px;
+}
+main{
+
+}
+#ml{
+    width: 250px;background-color: #2A3542;float: left;min-height:800px;color:#fff;text-align: center;
+}
+#ml .home{
+    height: 60px;line-height: 60px;
+}
+#ml li{
+    left: 60px;line-height: 60px;
+}
+#ml span{
+    margin-right: 5px;
+}
+#ml li:hover,#ml .home:hover{
+    color:#58bc58;
+}
+#ml ul .lichild{
+    height: 0;overflow: hidden;
+}
+#mr{
+    background: url('../img/star.jpg');min-height: 800px;
+}

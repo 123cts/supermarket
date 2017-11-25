@@ -1,0 +1,115 @@
+#top {
+  height: 30px;
+  text-align: center;
+}
+
+.header {
+  height: 70px;
+  background-color: #19B394;
+  display: flex;
+}
+
+.header p {
+  flex: 1.5;
+  float: left;
+}
+
+.header p img {
+  width: 300px;
+  height: 70px;
+}
+
+.header .hr {
+  flex: 1;
+  float: right;
+  width: auto;
+}
+
+.header .hr li {
+  padding: 0 30px;
+  float: left;
+  line-height: 70px;
+  color: #fff;
+  position: relative;
+}
+
+.header .hr li span {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  font-size: 20px;
+}
+
+.main {
+  display: flex;
+}
+
+.main #manus {
+  width: 160px;
+  background-color: #2A3542;
+  float: left;
+  color: #fff;
+  text-align: center;
+  min-height: 569px;
+  padding-top: 40px;
+}
+
+.main #manus .home {
+  position: relative;
+}
+
+.main #manus .home span {
+  position: absolute;
+  left: 39px;
+  top: -1px;
+  font-size: 20px;
+}
+
+.main #manus .master {
+  padding-top: 10px;
+}
+
+.main #manus .master > li {
+  height: 50px;
+  line-height: 50px;
+}
+
+.main #manus .master > li span {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.main #manus .master li:hover {
+  color: #19B394;
+  background-color: #35404D;
+}
+
+.main #manus .master .lichild {
+  height: 0;
+  overflow: hidden;
+}
+
+.main #manus .master .lichild > li {
+  height: 30px;
+  line-height: 30px;
+}
+
+.main #manus .master .lichild > li a {
+  display: block;
+  color: #fff;
+}
+
+.main #manus .master .lichild > li a:active {
+  color: #19B394;
+}
+
+.main #manus .master .lichild li:hover a {
+  color: #19B394;
+  background-color: #35404D;
+}
+
+.main #right {
+  background-color: #F0F3F4;
+  flex: 1;
+  min-height: 569px;
+}
