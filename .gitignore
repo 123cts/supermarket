@@ -1,7 +1,12 @@
-﻿#过滤文件
-/node_modules
-/doc
-package-lock.json
+﻿#过滤压缩包
+*.zip
 
-#过滤文件
-*.zip  ./api/node_modules
+#过滤单个文件
+gulpfile.js
+
+
+#过滤文件夹
+doc/
+scss/
+#过滤文件夹
+node_modules/

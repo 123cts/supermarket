@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+   
+      <link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.7/css/bootstrap.min.css" />  
+      <link rel="stylesheet" type="text/css" href="../css/purchase.css" />
+</head>
+<body>
+    <div class="all">
+        <div class="title">
+            <ul>
+                <li class="atv">商品采购</li>
+                <li>供应商管理</li>
+                <li>仓库管理</li>
+                <li>仓库调拨</li>
+            </ul>
+            <p><i class="glyphicon glyphicon-search" ></i><input type="text" placeholder="aaa"/></p>
+        </div>
+        <div class="inventory">
+            <div class="prd">
+                <div class="nav">
+                    <ul>
+                        <li class="add_prc"><i class="glyphicon glyphicon-plus"></i>新增进货</li>
+                        <li><i class="glyphicon glyphicon-pencil"></i>修改</li>
+                        <li><i class="glyphicon glyphicon-export"></i>导出</li>
+                        <li><i class="glyphicon glyphicon-cd"></i>修改</li>
+                        <li><i class="glyphicon glyphicon-trash"></i>删除</li>
+                        <li><i class="glyphicon glyphicon-refresh"></i>刷新</li>
+                        <li><label><input type="checkBox" />最近1天</label></li>
+                        <li><label><input type="checkBox" />最近3天</label></li>
+                        <li><label><input type="checkBox" />最近7天</label></li>
+                    </ul>
+                </div>
+                <div class="data">
+                    <table class="table">
+                        <tr>
+                            <th><label><input type="checkBox" />单据编号</label></th>
+                            <th>供应商</th>
+                            <th>商品名称</th>
+                            <th>单位</th>
+                            <th>单价</th>
+                            <th>数量</th>
+                            <th>合计</th>
+                            <th>实收</th>
+                            <th>支付方式</th>
+                            <th>入库状态</th>
+                            <th>进货日期</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkBox" />DEC303983465302</td>
+                            <td>李四</td>
+                            <td>111</td>
+                            <td>盆</td>
+                            <td>10</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>微信</td>
+                            <td>已入库</td>
+                            <td>2017-11-25</td>
+                            <td>打印详情退货</td>
+                        </tr>
+                       <tr>
+                            <td><input type="checkBox" />DEC303983465302</td>
+                            <td>李四</td>
+                            <td>111</td>
+                            <td>盆</td>
+                            <td>10</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>微信</td>
+                            <td>已入库</td>
+                            <td>2017-11-25</td>
+                            <td>打印详情退货</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkBox" />DEC303983465302</td>
+                            <td>李四</td>
+                            <td>111</td>
+                            <td>盆</td>
+                            <td>10</td>
+                            <td>0</td><td>0</td>
+                            <td>0</td>
+                            <td>微信</td>
+                            <td>已入库</td>
+                            <td>2017-11-25</td>
+                            <td>打印详情退货</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="prd">
+                <div class="nav">
+                    <ul>
+                        <li><i class="glyphicon glyphicon-plus"></i>新增供应商</li>
+                        <li><i class="glyphicon glyphicon-pencil"></i>修改</li>
+                        <li><i class="glyphicon glyphicon-trash"></i>删除</li>
+                        <li><i class="glyphicon glyphicon-refresh"></i>刷新</li>
+                    </ul>
+                </div>
+                <div class="data">
+                    <table class="table">
+                        <tr>
+                            <th><label><input type="checkBox" />供应商</label></th>
+                            <th>应付欠款(元)</th>
+                            <th>应收退款(元)</th>
+                            <th>联系人</th>
+                            <th>联系电话</th>
+                            <th>添加时间</th>
+                            <th>操作人员</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkBox" />李四</td>
+                            <td>0</td>
+                            <td>44</td>
+                            <td>李四</td>
+                            <td>13512345678</td>
+                            <td>2017-10-24 15:28:58</td>
+                            <td>管理员</td>
+                            <td>还款|收付记录</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkBox" />李四</td>
+                            <td>0</td>
+                            <td>44</td>
+                            <td>李四</td>
+                            <td>13512345678</td>
+                            <td>2017-10-24 15:28:58</td>
+                            <td>管理员</td>
+                            <td>还款|收付记录</td>
+                        </tr>
+                         <tr>
+                            <td><input type="checkBox" />李四</td>
+                            <td>0</td>
+                            <td>44</td>
+                            <td>李四</td>
+                            <td>13512345678</td>
+                            <td>2017-10-24 15:28:58</td>
+                            <td>管理员</td>
+                            <td>还款|收付记录</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="prd">
+                <div class="nav">
+                    <ul>
+                        <li><i class="glyphicon glyphicon-plus"></i>新增仓库</li>
+                        <li><i class="glyphicon glyphicon-pencil"></i>修改</li>
+                        <li><i class="glyphicon glyphicon-trash"></i>删除</li>
+                        <li><i class="glyphicon glyphicon-refresh"></i>刷新</li>
+                    </ul>
+                </div>
+                <div class="data">
+                    <table class="table">
+                        <tr>
+                            <th><label><input type="checkBox" />仓库名称</label></th>
+                            <th>仓库编码</th>
+                            <th>仓库状态</th>
+                            <th>联系人</th>
+                            <th>联系电话</th>
+                            <th>添加时间</th>
+                            <th>备注</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkBox" />A仓库</td>
+                            <td>001</td>
+                            <td>张三</td>
+                            <td>13512345678</td>
+                            <td>2017-10-24 15:28:58</td>
+                            <td>管理员</td>
+                            <td>查看库存</td>
+                        </tr>
+                         <tr>
+                            <td><input type="checkBox" />A仓库</td>
+                            <td>001</td>
+                            <td>张三</td>
+                            <td>13512345678</td>
+                            <td>2017-10-24 15:28:58</td>
+                            <td>管理员</td>
+                            <td>查看库存</td>
+                        </tr>
+                          <tr>
+                            <td><input type="checkBox" />A仓库</td>
+                            <td>001</td>
+                            <td>李四</td>
+                            <td>13512345678</td>
+                            <td>2017-10-24 15:28:58</td>
+                            <td>管理员</td>
+                            <td>查看库存</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="prd">
+                <div class="nav">
+                    <ul>
+                        <li><i class="glyphicon glyphicon-plus"></i>拨入</li>
+                        <li><i class="glyphicon glyphicon-pencil"></i>拨出</li>
+                        <li><i class="glyphicon glyphicon-trash"></i>刷新</li>
+                        <li>仓库<select></select></li>
+                    </ul>
+                </div>
+                <div class="data">
+                    <table class="table">
+                        <tr>
+                            <th><label><input type="checkBox" />单据编号</label></th>
+                            <th>目标地</th>
+                            <th>商品名称</th>
+                            <th>商品编码</th>
+                            <th>数量</th>
+                            <th>单位</th>
+                            <th>金额</th>
+                            <th>操作时间</th>
+                            <th>操作类型</th>
+                            <th>操作</th>
+                            
+                        </tr>
+                        <tr>
+                            <td><input type="checkBox" />DEJH20171124172440116</td>
+                            <td>A仓库</td>
+                            <td>笔记本</td>
+                            <td>6931716826209</td>
+                            <td>10</td>
+                            <td>支</td>
+                            <td>100</td>
+                            <td>2017-10-24 15:28:58</td>
+                            <td>仓库入库</td>
+                            <td>详情</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkBox" />DEJH20171124172440116</td>
+                            <td>A仓库</td>
+                            <td>笔记本</td>
+                            <td>6931716826209</td>
+                            <td>10</td>
+                            <td>支</td>
+                            <td>100</td>
+                            <td>2017-10-24 15:28:58</td>
+                            <td>仓库入库</td>
+                            <td>详情</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkBox" />DEJH20171124172440116</td>
+                            <td>A仓库</td>
+                            <td>笔记本</td>
+                            <td>6931716826209</td>
+                            <td>10</td>
+                            <td>支</td>
+                            <td>100</td>
+                            <td>2017-10-24 15:28:58</td>
+                            <td>仓库入库</td>
+                            <td>详情</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../lib/jquery-3.1.1.js"></script>
+    <script type="text/javascript">
+        (function($){
+             $('.inventory').find('.prd').eq(0).css('display', 'block').siblings('.prd').css('display', 'none');
+            $('.title').on('click','li',function(){
+                $(this).addClass('atv').siblings('li').removeClass('atv');
+                var idx = $(this).index()*1+1;
+
+                 $('.inventory').find('.prd').eq($(this).index()).css('display', 'block').siblings('.prd').css('display', 'none');
+            })
+
+            // 子页面在父级页面的弹出层
+            $('.add_prc').on('click',function(){
+                parent.popit();
+                
+                // 给弹出层设置样式
+                $(window.parent.document).find("#mydiv").css({
+                    'background':'#fff',
+                    'width':600,
+                    'height':500,
+                    'top':80,
+                    'left':'50%',
+                    'margin-left':-300
+                });;
+            })
+           
+        })(jQuery)
+    </script>
+</body>
+
+</html>

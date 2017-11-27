@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.7/css/bootstrap.min.css" /> 
+    <link rel="stylesheet" type="text/css" href="../css/product.css" />
+</head>
+<body>
+    <div class="all">
+        <div class="title">
+            <h4>会员列表</h4>
+            <p><i class="glyphicon glyphicon-search" ></i><input type="text" placeholder="aaa"/></p>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="add_VIP"><i class="glyphicon glyphicon-plus"></i>新增</li>
+                <li><i class="glyphicon glyphicon-pencil"></i>修改</li>
+                <li><i class="glyphicon glyphicon-import"></i>导入</li>
+                <li><i class="glyphicon glyphicon-export"></i>导出</li>
+                <li><i class="glyphicon glyphicon-cd"></i>修改密码</li>
+                <li><i class="glyphicon glyphicon-trash"></i>删除</li>
+                <li><i class="glyphicon glyphicon-refresh"></i>刷新</li>
+                <li><i class="glyphicon glyphicon-filter"></i>筛选会员</li>
+            </ul>
+        </div>
+        <div class="data">
+            <table class="table">
+                <tr>
+                    <th>卡号</th>
+                    <th>会员名称</th>
+                    <th>电话号码</th>
+                    <th>会员等级</th>
+                    <th>可用积分</th>
+                    <th>所属店铺</th>
+                    <th>注册来源</th>
+                </tr>
+                <tr>
+                    <td>ID01</td>
+                    <td>大明</td>
+                    <td>15236894135</td>
+                    <td>普通会员</td>
+                    <td>0</td>
+                    <td>盛大超市</td>
+                    <td>微信</td>
+                </tr>
+               <tr>
+                    <td>ID02</td>
+                    <td>刘富豪</td>
+                    <td>15236894135</td>
+                    <td>普通会员</td>
+                    <td>0</td>
+                    <td>盛大超市</td>
+                    <td>微信</td>
+                </tr>
+                <tr>
+                    <td>ID03</td>
+                    <td>好后</td>
+                    <td>15236894135</td>
+                    <td>普通会员</td>
+                    <td>0</td>
+                    <td>盛大超市</td>
+                    <td>微信</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="../lib/jquery-3.1.1.js"></script>
+    <script type="text/javascript">
+         $(function(){
+            // 子页面在父级页面的弹出层
+
+            $('.add_VIP').on('click',function(){
+                parent.popit();
+                // 给弹出层设置样式
+                $(window.parent.document).find("#mydiv").css({
+                    'background':'#fff',
+                    'width':600,
+                    'height':500,
+                    'top':80,
+                    'left':'50%',
+                    'margin-left':-300
+                });;
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+#top {
+  height: 30px;
+  text-align: center;
+}
+
+.header {
+  height: 70px;
+  background-color: #19B394;
+  display: flex;
+}
+
+.header p {
+  flex: 1.5;
+  float: left;
+}
+
+.header p img {
+  width: 300px;
+  height: 70px;
+}
+
+.header .hr {
+  flex: 1;
+  float: right;
+  width: auto;
+}
+
+.header .hr li {
+  padding: 0 30px;
+  float: left;
+  line-height: 70px;
+  color: #fff;
+  position: relative;
+}
+
+.header .hr li span {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  font-size: 20px;
+}
+
+.header .hr li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main {
+  display: flex;
+  padding: 10px 18px 18px 15px;
+  background-color: #282C2B;
+}
+
+.main #manus {
+  float: left;
+  min-height: 569px;
+}
+
+.main #manus > h4 {
+  height: 48px;
+  position: relative;
+  color: #999999;
+  margin: 0;
+}
+
+.main #manus > h4 input {
+  width: 310px;
+  height: 48px;
+  padding-left: 38px;
+  font-size: 14px;
+}
+
+.main #manus > h4 i {
+  position: absolute;
+}
+
+.main #manus > h4 .glyphicon-th {
+  left: 10px;
+  top: 14px;
+}
+
+.main #manus > h4 .glyphicon-remove-circle {
+  right: 10px;
+  top: 14px;
+}
+
+.main #manus .sell {
+  background-color: #fff;
+  margin-top: 5px;
+  width: 310px;
+}
+
+.main #manus .sell > p {
+  height: 33px;
+  line-height: 33px;
+  font-size: 16px;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.main #manus .sell .sell_view {
+  height: 350px;
+  border-top: 1px solid #D3D0CB;
+  border-bottom: 1px solid #D3D0CB;
+}
+
+.main #manus .sell > ul {
+  height: 118px;
+  margin: 0;
+}
+
+.main #manus .sell > ul li {
+  font-size: 16px;
+  height: 29px;
+  line-height: 29px;
+  padding: 0 10px;
+}
+
+.main #manus .sell > ul li span:first-child {
+  float: left;
+}
+
+.main #manus .sell > ul li span:last-child {
+  float: right;
+  position: relative;
+  font-weight: bold;
+  color: #B6B6B6;
+}
+
+.main #manus .sell > ul li span:last-child i {
+  position: absolute;
+  width: 33px;
+  height: 20px;
+  border-radius: 5px;
+  left: -36px;
+  background-color: #FFA81D;
+  color: #fff;
+  top: 3px;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.main #manus .sell > ul li:last-child span {
+  color: #FF2825;
+}
+
+.main #manus .sell .btn {
+  height: 49px;
+  color: #fff;
+  padding: 0;
+  font-size: 18px;
+}
+
+.main #manus .sell .btn button {
+  float: left;
+  height: 48px;
+  width: 154px;
+  border: none;
+  background-color: #FF6666;
+}
+
+.main #manus .sell .btn button:first-child {
+  border-right: 1px solid #fff;
+}
+
+.main #right {
+  flex: 1;
+  margin-left: 12px;
+  display: flex;
+}
+
+.main #right .left_menus {
+  width: 93px;
+  float: left;
+  text-align: center;
+}
+
+.main #right .left_menus > h4 {
+  height: 48px;
+  color: #9590A6;
+  font-size: 16px;
+  background-color: #625293;
+  line-height: 48px;
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.main #right .left_menus ul li {
+  height: 44px;
+  background-color: #fff;
+  color: #333;
+  margin-bottom: 3px;
+  line-height: 44px;
+}
+
+.main #right .left_menus ul li:first-child, .main #right .left_menus ul li:nth-child(2) {
+  height: 52px;
+  line-height: 52px;
+  background-color: #90B82D;
+}
+
+.main #right .right_menus {
+  float: right;
+  flex: 1;
+  margin-left: 15px;
+}
+
+.main #right .right_menus .top {
+  height: 48px;
+}
+
+.main #right .right_menus .top ul li {
+  float: left;
+  width: 125px;
+  color: #333;
+  text-align: center;
+  line-height: 48px;
+  margin-right: 4px;
+  background-color: #EFEFEF;
+}
+
+.main #right .right_menus .top ul .atv {
+  background-color: #90B82D;
+  color: #fff;
+}
+
+.main #right .right_menus .type ul {
+  margin: 0;
+}
+
+.main #right .right_menus .type ul li {
+  width: 185px;
+  float: left;
+  background-color: #fff;
+  margin-top: 8px;
+  margin-right: 10px;
+}
+
+.main #right .right_menus .type ul li .img {
+  width: 70px;
+  height: 80px;
+  float: left;
+  overflow: hidden;
+}
+
+.main #right .right_menus .type ul li .ri {
+  float: left;
+}
+
+.main #right .right_menus .type ul li .ri .name {
+  height: 55px;
+  padding: 8px;
+}
+
+.main #right .right_menus .type ul li .ri .info {
+  color: #FF6666;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+}
+
+.main #right .right_menus .type ul li .ri .info .price {
+  float: left;
+  width: 65px;
+}
+
+.main #right .right_menus .type ul li .ri .info .tory {
+  width: 50px;
+  float: right;
+  position: relative;
+  padding-left: 15px;
+  text-align: center;
+}
+
+.main #right .right_menus .type ul li .ri .info .tory span {
+  display: block;
+  background-color: #FF6666;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 5px;
+  left: 0;
+  top: 0;
+}

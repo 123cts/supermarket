@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+   
+      <link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.7/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/product.css" />
+</head>
+<body>
+    <div class="all">
+        <div class="title">
+            <h4>商品列表</h4>
+            <p><i class="glyphicon glyphicon-search" ></i><input type="text" placeholder="aaa"/></p>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="add_prd"><i class="glyphicon glyphicon-plus"></i>新增<div class="add"></div></li>
+                <li><i class="glyphicon glyphicon-pencil"></i>修改</li>
+                <li><i class="glyphicon glyphicon-import"></i>导入</li>
+                <li><i class="glyphicon glyphicon-export"></i>导出</li>
+                <li><i class="glyphicon glyphicon-trash"></i>删除</li>
+                <li><i class="glyphicon glyphicon-refresh"></i>刷新</li>
+                <li><i class="glyphicon glyphicon-filter"></i>筛选商品</li>
+            </ul>
+        </div>
+        <div class="data">
+            <table class="table">
+                <tr>
+                    <th>序号</th>
+                    <th>商品名称</th>
+                    <th>类别</th>
+                    <th>商品编码</th>
+                    <th>零售价</th>
+                    <th>库存数量</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>苹果</td>
+                    <td>水果</td>
+                    <td>6976398593450</td>
+                    <td>3.5元/斤</td>
+                    <td>30kg</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>苹果</td>
+                    <td>水果</td>
+                    <td>6976398593450</td>
+                    <td>3.5元/斤</td>
+                    <td>30kg</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>苹果</td>
+                    <td>水果</td>
+                    <td>6976398593450</td>
+                    <td>3.5元/斤</td>
+                    <td>30kg</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>苹果</td>
+                    <td>水果</td>
+                    <td>6976398593450</td>
+                    <td>3.5元/斤</td>
+                    <td>30kg</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <button onclick="javascript:parent.popit();">弹出</button>
+    <script src="../lib/jquery-3.1.1.js"></script>
+
+    <script type="text/javascript">
+
+        $(function(){
+            // 子页面在父级页面的弹出层
+
+            $('.add_prd').on('click',function(){
+                parent.popit();
+                // 给弹出层设置样式
+                $(window.parent.document).find("#mydiv").css({
+                    'background':'#fff',
+                    'width':600,
+                    'height':500,
+                    'top':80,
+                    'left':'50%',
+                    'margin-left':-300
+                });;
+            })
+        })
+    </script>
+</body>
+
+</html>

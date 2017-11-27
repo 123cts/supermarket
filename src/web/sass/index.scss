@@ -1,0 +1,102 @@
+
+
+#top{
+    height:30px;
+    text-align:center;
+}
+.header{
+    height: 70px;background-color:#19B394;display:flex;
+    p{
+        flex:1.5;
+        float:left;
+        img{
+            width: 300px;
+            height: 70px;
+        }
+    }
+    .hr{
+        flex:1;
+        float:right;width: auto;
+        li{
+            padding:0 30px;
+            float:left;line-height: 70px;color:#fff;position:relative;
+            span{
+                position:absolute;
+                left:0;top:25px;font-size:20px;
+            }
+            a{text-decoration:none; color:#fff;}
+        }
+    }
+}
+
+.main{
+    display:flex;
+    #manus{
+        width: 160px;background-color: #2A3542;float:left;color:#fff;text-align: center; min-height: 569px;
+        padding-top:40px;
+        .home{
+            position:relative;
+         span{
+                position:absolute;
+                left:39px;top:-1px;
+                font-size:20px;
+            }
+        }
+        .master{
+            padding-top:10px;
+            >li{
+                height: 50px;line-height: 50px;
+                span{
+                    margin-right: 10px;
+                    font-size:18px;
+                }
+            }
+            li:hover{
+                color:#19B394;
+                background-color:#35404D;
+            }
+            .lichild{
+                height:0;overflow: hidden;
+                >li{
+                    height: 30px;line-height: 30px;
+                    a{
+                        display:block;color:#fff;
+                    }
+                    a:active{
+                        color:#19B394;
+                    }
+                }
+                li:hover a{
+                color:#19B394;
+                background-color:#35404D;
+            }
+            }
+        }
+    } 
+    #right{
+        background-color:#F0F3F4;
+        flex:1;min-height: 569px;
+        // background: url('../img/star.jpg');
+       
+    }
+}
+#coverdiv{
+    filter:alpha(opacity=50);
+    Opacity:0.5; 
+    background-color:#000; 
+    position:absolute; 
+    left:0px; 
+    top:0px;
+}
+#mydiv{
+    border:1px solid #666666 ;
+    padding:50px; 
+    position:absolute; 
+    background-color:#FFEE00;
+    // position:relative;
+    span{
+        position:absolute;
+        right:10px;top:10px;
+        font-size:18px;color:#ccc;
+    }
+}

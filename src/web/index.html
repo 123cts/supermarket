@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="css/base.css" />
+        <link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.7/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+    </head>
+    <script src="lib/jquery-3.1.1.js"></script>
+    <body>
+ 
+        <div id="top">德客</div>
+        <header class="header">
+            <p><img src="img/h1.png" /></p>
+            <ul class="hr">
+                <li><span class="glyphicon glyphicon-barcode"></span><a href="./html/before.html">前台收银</a></li>
+                <li><span class="glyphicon glyphicon-phone"></span>消息</li>
+                <li><span class="glyphicon glyphicon-question-sign"></span>帮助中心</li>
+                <li>管理员</li>
+            </ul>
+        </header>
+        <main class="main">
+            <div id="manus">
+                <div class="home"><span class="glyphicon glyphicon-th-large"></span>首页</div>
+                    <ul class="master">
+                
+                    <li><span class="glyphicon glyphicon-user"></span>会员管理</li>
+                    <ul class="lichild">
+                        <li><a href="html/VIP.html" target="right">新增会员</a></li>
+                        <li><a href="html/VIP.html" target="right">会员列表</a></li>
+                    </ul>
+                    <li><span class="glyphicon glyphicon-tasks"></span>商品管理</li>
+                    <ul class="lichild">
+                        <li><a href="./html/product.html" target="right">新增商品</a></li>
+                        <li><a href="./html/product.html" target="right">商品列表</a></li>
+                        <li> <a href="./html/prd_class.html" target="right">商品分类</a></li>
+                    </ul>
+                    <li><span class="glyphicon glyphicon-book"></span>库存管理</li>
+                    <ul class="lichild">
+                        <li><a href="./html/purchase.html" target="right">进货管理</a></li>
+                        <li><a href="./html/sal_return.html" target="right">采购退货</a></li>
+                        <li><a href="./html/prd_check.html" target="right">产品盘点</a></li>
+                    </ul>
+                    <li><span class="glyphicon glyphicon-tree-deciduous"></span>员工管理</li>
+                    <ul class="lichild">
+                        <li><a href="html/employee.html" target="right">新增员工</a></li>
+                        <li><a href="html/employee.html" target="right">员工列表</a></li>
+                    </ul>
+                </ul>
+            </div>
+            <iframe name="right" id="right"></iframe>
+        </main>
+        <div id="coverdiv"></div>
+        <div id='mydiv'>我的层 <span id="close" class="glyphicon glyphicon-remove"></span></div>
+    </body>
+    <script type="text/javascript">
+         var cover =mydiv= null;
+        jQuery(function($){
+            $('.master>li').click(function() {
+                var len=$(this).next().children('li').length;
+                var h=$(this).next().height();
+               if(h>0){ 
+                $(this).next().animate({'height':0});
+               }else{
+                 $(this).next().animate({'height':30*len});
+               }
+            });
+
+            $('#close').on('click',function(){
+                mydiv.style.display =cover.style.display = 'none';
+            })
+            cover=document.getElementById('coverdiv');
+            cover.style.width = Math.max(document.documentElement.scrollWidth, document.documentElement.clientWidth)+ "px";
+            cover.style.height = Math.max(document.documentElement.scrollHeight, document.documentElement.clientHeight) + "px"
+            cover.style.display = "none";
+            
+            mydiv = document.getElementById('mydiv');
+              with (mydiv){
+                style.display = "none";
+              }
+        })
+
+        function popit(){
+          mydiv.style.display=cover.style.display = '';
+        }
+    </script>
+</html>

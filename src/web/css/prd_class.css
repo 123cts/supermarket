@@ -1,0 +1,113 @@
+.all {
+  height: 638px;
+  padding: 20px 27px 0 27px;
+  background-color: #F0F3F4;
+}
+
+.all .title {
+  height: 38px;
+  border-bottom: 1px solid #CFCFCF;
+}
+
+.all .title > h4 {
+  float: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 90px;
+  background-color: #19B394;
+  line-height: 38px;
+  color: #fff;
+  text-align: center;
+  height: 38px;
+}
+
+.all .title p {
+  position: relative;
+  float: right;
+  width: 215px;
+}
+
+.all .title p input {
+  width: 215px;
+  height: 28px;
+  border: 1px solid #E2E4E4;
+  border-radius: 14px;
+  outline: none;
+  padding-left: 40px;
+}
+
+.all .title p i {
+  position: absolute;
+  left: 15px;
+  top: 7px;
+  font-size: 16px;
+  color: #19B394;
+}
+
+.all .prds {
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+}
+
+.all .prds .class {
+  width: 155px;
+  float: left;
+  margin: 0;
+  border-right: 1px solid #ccc;
+  height: 100%;
+}
+
+.all .prds .class p {
+  height: 30px;
+  padding-top: 10px;
+  color: #333;
+  font-size: 16px;
+  padding-left: 15px;
+}
+
+.all .prds .class ul li {
+  height: 30px;
+  line-height: 30px;
+  color: #333;
+  padding-left: 30px;
+  position: relative;
+}
+
+.all .prds .class ul li i {
+  position: absolute;
+  left: 13px;
+  top: 7px;
+  color: #333;
+}
+
+.all .prds .inventory {
+  float: left;
+  flex: 1;
+}
+
+.all .prds .inventory .prd .nav {
+  height: 70px;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.all .prds .inventory .prd .nav > ul > li {
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 30px;
+  padding-right: 10px;
+  position: relative;
+}
+
+.all .prds .inventory .prd .nav > ul > li i {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: #19B394;
+}
+
+.all .prds .inventory .prd .data {
+  padding: 0 20px;
+}

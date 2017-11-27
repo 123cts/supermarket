@@ -1,0 +1,152 @@
+
+#top{
+    height:30px;
+    text-align:center;
+}
+.header{
+    height: 70px;background-color:#19B394;display:flex;
+    p{
+        flex:1.5;
+        float:left;
+        img{
+            width: 300px;
+            height: 70px;
+        }
+    }
+    .hr{
+        flex:1;
+        float:right;width: auto;
+        li{
+            padding:0 30px;
+            float:left;line-height: 70px;color:#fff;position:relative;
+            span{
+                position:absolute;
+                left:0;top:25px;font-size:20px;
+            }
+            a{text-decoration:none; color:#fff;}
+        }
+    }
+}
+
+.main{
+    display:flex;padding:10px 18px 18px 15px;background-color:#282C2B; 
+    #manus{
+        float:left;min-height: 569px;
+        >h4{
+            height: 48px;position:relative;color:#999999;margin:0;
+            input{width: 310px;
+                height: 48px;padding-left:38px;font-size:14px;
+            }
+            i{
+                position:absolute;
+            }
+            .glyphicon-th{
+                left:10px;top:14px;
+            }
+            .glyphicon-remove-circle{
+                right:10px;top:14px;
+            }
+        }
+        .sell{background-color:#fff;margin-top:5px;
+            width: 310px;
+            >p{
+                height: 33px;line-height: 33px;font-size:16px;color:#333;padding:0;margin:0;padding-left:10px;
+            }
+            .sell_view{
+                height: 350px;border-top:1px solid #D3D0CB;border-bottom:1px solid #D3D0CB;
+            }
+            >ul{
+                height: 118px;margin:0;
+                li{font-size:16px;
+                    height: 29px;line-height: 29px;padding:0 10px;
+                    span:first-child{
+                        float:left;
+                    }
+                    span:last-child{
+                        float:right;position:relative;font-weight:bold;color:#B6B6B6;
+                        i{
+                            position:absolute;width: 33px;height: 20px;border-radius:5px;left:-36px;background-color:#FFA81D;color:#fff;top:3px;font-size:12px;line-height: 20px;text-align:center;
+                        }
+                    }
+
+                }
+                li:last-child{
+                    span{
+                        color:#FF2825;
+                    }
+                }
+            }
+            .btn{
+                height: 49px;color:#fff;padding:0;font-size:18px;
+                button{
+                   float:left;height: 48px;
+                    width: 154px;
+                    border:none;background-color:#FF6666;
+                }
+                button:first-child{
+                    border-right:1px solid #fff;
+                }
+            }
+        }
+    } 
+    #right{
+        flex:1;margin-left:12px;display:flex;
+        // background: url('../img/star.jpg');
+       .left_menus{
+            width: 93px;float:left;text-align:center;
+            >h4{height: 48px;color:#9590A6;font-size:16px;background-color:#625293;line-height: 48px;margin:0;margin-bottom:7px;}
+            ul{
+                li{
+                    height: 44px;background-color:#fff;color:#333;margin-bottom:3px;line-height: 44px;
+                }
+                li:first-child,li:nth-child(2){
+                    height: 52px;line-height: 52px;background-color:#90B82D;
+                }
+            }
+       }
+       .right_menus{
+            float:right;flex:1;margin-left:15px;
+            .top{
+                height: 48px;
+                ul{
+                    li{
+                        float:left;width: 125px;color:#333;text-align:center;line-height: 48px;margin-right:4px;background-color:#EFEFEF;
+                    }
+                    .atv{
+                        background-color:#90B82D;color:#fff;
+                    }
+                }
+            }
+            .type{
+               ul{
+                margin:0;
+                li{
+                    width: 185px;float:left;background-color:#fff;margin-top:8px;margin-right:10px;
+                    .img{
+                        width: 70px;height:80px;float:left;overflow:hidden;
+                    }
+                    .ri{float:left;
+                        .name{
+                            height: 55px;padding:8px;
+                         }
+                    .info{
+                        color:#FF6666;height: 25px;line-height: 25px;font-size:12px;
+                        .price{
+                            float:left;width: 65px;
+                        }
+                        .tory{width: 50px;
+                            float:right;position:relative;padding-left:15px;text-align:center;
+                            span{display:block;background-color:#FF6666;color:#fff;
+                                width: 20px;height: 20px;position:absolute;border-radius:5px;
+                                left:0;top:0;
+                            }
+                        }
+                    }
+                    }
+                    
+                }
+               } 
+            }
+       }
+    }
+}
